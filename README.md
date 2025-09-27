@@ -31,5 +31,6 @@
 # Streamlit Demo
   - https://deliverytimepred.streamlit.app/
 
+# Visual
 ![Predict vs Actual](reports/actualvspredict.png)
 ![Feature Coefficients](reports/coeff.png)
