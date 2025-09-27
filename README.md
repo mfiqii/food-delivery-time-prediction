@@ -14,12 +14,16 @@
 
 # 📊 Results
 
-| Model                      | MAE   | RMSE  | R²         | MAPE   |   |
-| -------------------------- | ----- | ----- | ---------- | ------ | - |
-| Linear Regression          | 5.90  | 8.83  | 0.83       | 10.41% |   |
-| Ridge / Lasso / ElasticNet | ~5.90 | ~8.83 | ~0.82–0.83 | ~10.4% |   |
-| Random Forest              | 6.99  | 10.13 | 0.77       | 13.27% |   |
-| XGBoost (tuned)            | 6.50  | 9.47  | 0.80       | 12.16% |   |
+| Model                               | MAE (min) | RMSE (min) | R²       | MAPE (%)  |
+| ----------------------------------- | --------- | ---------- | -------- | --------- |
+| **Linear Regression (Baseline)**    | **5.90**  | **8.83**   | **0.83** | **10.41** |
+| Random Forest (Baseline)            | 7.02      | 10.21      | 0.77     | 13.05     |
+| XGBoost (Baseline)                  | 7.02      | 10.08      | 0.77     | 12.92     |
+| Ridge Regression (Tuned α=0.1)      | 5.90      | 8.83       | 0.83     | 10.41     |
+| Lasso Regression (Tuned α=0.001)    | 5.90      | 8.83       | 0.83     | 10.41     |
+| Elastic Net (Tuned α=0.001, l1=0.9) | 5.90      | 8.83       | 0.83     | 10.42     |
+| Random Forest (Tuned)               | 6.99      | 10.13      | 0.77     | 13.27     |
+| XGBoost (Tuned)                     | 6.50      | 9.47       | 0.80     | 12.16     |
 
   - Model Terbaik: Linear Regression → MAE ~6 menit, R² = 0.83.
   - Faktor paling berpengaruh: Distance, Weather, Preparation Time, Traffic Level
