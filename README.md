@@ -1,7 +1,7 @@
 # ⏱️ Optimizing Food Delivery Time Prediction
 
 # 📂 Dataset
-  - Sumber: Kaggle ![dataset](https://www.kaggle.com/datasets/denkuznetz/food-delivery-time-prediction/code)
+  - Sumber: Kaggle [dataset](https://www.kaggle.com/datasets/denkuznetz/food-delivery-time-prediction/code)
   - Jumlah data: 1000 baris, 9 fitur
   - Fitur utama: Distance, Preparation Time, Courier Experience, Weather, Traffic Level, Vehicle Type, Time of Day
   - Target: Delivery Time (minutes)
@@ -27,6 +27,9 @@
 
   - Model Terbaik: Linear Regression → MAE ~6 menit, R² = 0.83.
   - Faktor paling berpengaruh: Distance, Weather, Preparation Time, Traffic Level
+
+# Streamlit Demo
+  - https://deliverytimepred.streamlit.app/
 
 ![Predict vs Actual](reports/actualvspredict.png)
 ![Feature Coefficients](reports/coeff.png)
